@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head> <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<title>Abi 2026 – Unser Motto</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-100 text-gray-900">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+
+<style>
+.graffiti {
+    font-family: 'Knewave', cursive;
+    letter-spacing: 0.005em;
+    color:#131B47;
+
+}
+</style>
+
+<header class="flex justify-between items-center p-4 bg-white shadow">
+<h1 class="text-xl font-bold">Abi 2026</h1>
+<div class="space-x-4">
+<a href="#memory" class="hover:underline">Memory Lane</a>
+<a href="#members" class="hover:underline">Unsere Stufe</a>
+<a href="#zitate" class="hover:underline">Zitate</a>
+<a href="login.html" class="hover:underline">Login</a>
+<a href="https://paypal.me/DEINLINK" class="bg-pink-400 text-white px-4 py-2 rounded">
+Spenden
+</a>
+</div>
+</header>
+
+<section class="text-center py-20 bg-pink-100">
+<h2 class="text-6xl tracking-tight graffiti">
+ Ab(I)wesenheit, mehr Fehlstunden als Punkte reingeschickt
+</h2>
+<p class="mt-4 text-2xl opacity-80">
+Unsere gemeinsame Reise
+</p>
+
+</section>
+
+<section id="memory" class="p-10">
+<h3 class="text-3xl font-bold mb-6">Memory Lane</h3>
+<div id="memoryGrid" class="grid grid-cols-2 md:grid-cols-4 gap-4"></div>
+</section>
+
+<section id="members" class="p-10 bg-white">
+<h3 class="text-3xl font-bold mb-6">Unsere Stufe</h3>
+<div id="membersGrid" class="grid grid-cols-2 md:grid-cols-4 gap-4"></div>
+</section>
+
+<section id="zitate" class="p-10 bg-white">
+<h3 class="text-3xl font-bold mb-6">Zitate</h3>
+<div class="quote-line">
+<div class="quote-track">
+<span>„Wir kamen, wir sahen, wir bestanden.“</span>
+<span>„Abi 2026 – Ende einer Ära.“</span>
+<span>„Erinnerungen, die bleiben.“</span>
+<span>„12 Jahre – ein Ziel.“</span>
+
+<!-- Duplikat für Endlosschleife -->
+<span>„Wir kamen, wir sahen, wir bestanden.“</span>
+<span>„Abi 2026 – Ende einer Ära.“</span>
+<span>„Erinnerungen, die bleiben.“</span>
+<span>„12 Jahre – ein Ziel.“</span>
+</div>
+</div>
+</section>
+
+
+<script src="js/main.js"></script>
+<!-- MODAL -->
+<div id="modal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center">
+<div class="bg-white rounded-lg p-6 max-w-lg w-full relative">
+<button id="closeModal" class="absolute top-2 right-2 text-gray-500 text-xl">&times;</button>
+<img id="modalImg" class="w-full rounded mb-4">
+<h2 id="modalTitle" class="text-2xl font-bold mb-2"></h2>
+<p id="modalText"></p>
+</div>
+</div>
+</body>
+</html>
